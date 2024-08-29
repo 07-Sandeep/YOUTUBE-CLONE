@@ -1,0 +1,248 @@
+.header{
+  height: 55px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+
+  background-color: white;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(222, 222, 222);
+}
+.left-section{
+  display: flex;
+  align-items: center;
+}
+.middle-section{
+  margin-left: 70px;
+  margin-right: 35px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  max-width: 500px;
+}
+.right-section{
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+.hamburger-icon{
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+  height: 24px;
+}
+.yt-logo{
+  cursor: pointer;
+  height: 20px;
+}
+.search-bar{
+  width: 0;
+  padding-left: 10px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  height: 36px;
+  font-size: 16px;
+  flex: 1;
+  box-shadow: inset 1px 2px 3px rgba(0,0,0,0.05);
+} 
+.search-bar::placeholder{
+  font-size: 16px;
+}
+.search-button{
+  background-color: rgb(244, 244, 244);
+  cursor: pointer;
+  border: 1px solid rgb(192, 192, 192);
+  height: 39.5px;
+  border-radius: 2px;
+  width: 66px;
+  margin-left: -1px;
+  margin-right: 10px;
+
+  position: relative;
+}
+.search-button .tooltip{
+  background-color: rgba(42, 42, 42, 0.65);
+  color: white;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  position: absolute;
+  top: 55px;
+
+  border-radius: 2px;
+  font-size: 12px;
+
+  opacity: 0;
+
+  transition: opacity 0.15s;
+
+  pointer-events: none;
+}
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.video-upload-con:hover .tooltip,
+.yt-apps-con:hover .tooltip,
+.notifications-icon-con:hover .tooltip{
+  opacity: 1;
+}
+.search-image{
+  height: 25px;
+  margin-top: 4px;
+}
+.voice-search-button{
+  cursor: pointer;
+  background-color: rgb(244, 244, 244);
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+}
+.voice-search-button .tooltip{
+  background-color: rgba(42, 42, 42, 0.65);
+  color: white;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  position: absolute;
+  top: 55px;
+  left: -37px;
+
+  border-radius: 2px;
+  font-size: 12px;
+
+  opacity: 0;
+
+  transition: opacity 0.15s;
+
+  pointer-events: none;
+
+  white-space: nowrap;
+}
+.voice-search-icon{
+  height: 24px;
+  margin-top: 4px;
+}
+.video-upload-icon{
+  cursor: pointer;
+  top: 3px;
+  height: 24px;
+}
+.video-upload-con .tooltip{
+  background-color: rgba(42, 42, 42, 0.65);
+  color: white;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  position: absolute;
+  top: 56px;
+  right: 165px;
+
+  border-radius: 2px;
+  font-size: 12px;
+
+  opacity: 0;
+
+  transition: opacity 0.15s;
+
+  pointer-events: none;
+}
+.yt-apps{
+  cursor: pointer;
+  top: 3px;
+  height: 24px;
+}
+.yt-apps-con .tooltip{
+  background-color: rgba(42, 42, 42, 0.65);
+  color: white;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  position: absolute;
+  top: 56px;
+  right: 90px;
+
+  border-radius: 2px;
+  font-size: 12px;
+
+  opacity: 0;
+
+  transition: opacity 0.15s;
+
+  pointer-events: none;
+}
+.notifications-icon{
+  cursor: pointer;
+  height: 24px;
+}
+.notifications-icon-con{
+  position: relative;
+}
+.notifications-icon-con .tooltip{
+  background-color: rgba(42, 42, 42, 0.65);
+  color: white;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  position: absolute;
+  top: 42px;
+  right: -30px;
+
+  border-radius: 2px;
+  font-size: 12px;
+
+  opacity: 0;
+
+  transition: opacity 0.15s;
+
+  pointer-events: none;
+}
+.no-of-notifications{
+  position: absolute;
+  top: -5px;
+  right: -9px;
+
+  background-color: rgb(220, 0, 0);
+  color: white;
+
+  border-radius: 50%;
+  border: 1px solid white;
+
+  font-size: 12px;
+
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.my-channel-logo{
+  cursor: pointer;
+  height: 32px;
+  border-radius: 50%;
+}
